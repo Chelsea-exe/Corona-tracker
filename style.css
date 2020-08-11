@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+.covid-header {
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+}
+.covid-description {
+    font-family: 'News Cycle', sans-serif;
+}
+.covid-jumbotron {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+.api-data {
+    width: 800px;
+    margin: 10px auto;
+}
+.data-boxes .country-index {
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.data-boxes .country-index span{
+    font-size: 24px;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 700;
+}
+.total-data{
+    display: flex;
+    width: 800px;
+    height: 200px;
+    padding: 0 10px 0 10px;
+    justify-content: space-between;
+}
+.new-data {
+    margin-top: 60px;
+    display: flex;
+    width: 800px;
+    height: 200px;
+    padding: 0 10px 0 10px;
+    justify-content: space-between;
+}
+.total-data div{
+    width: 235px;
+    height: 200px;
+    font-size: 32px;
+    text-align: center;
+    font-family: 'News Cycle', sans-serif;
+    /* background-color: rgb(137, 137, 137); */
+    color: white;
+}
+.total-data div p{
+    margin: 50px 0 10px 0;
+}
+.total-data div:nth-child(1){
+    background: #f78b0f;
+}
+.total-data div:nth-child(2){
+    background: #ff1111;
+}
+.total-data div:nth-child(3){
+    background: #32b336;
+}
+.new-data div{
+    width: 235px;
+    height: 200px;
+    font-family: 'News Cycle', sans-serif;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+.new-data div p{
+    margin: 50px 0 10px 0;
+}
+.new-data div:nth-child(1){
+    background: #e0bf07;
+}
+.new-data div:nth-child(2){
+    background: #ff5e00;
+}
+.new-data div:nth-child(3){
+    background: #7ce922;
+}
+label {
+    font-size: 24px;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: bold;
+}
+#submit-btn {
+    margin-top: 5px;
+    font-size: 18px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .api-data {
+      width: 100%;
+    }
+    .total-data {
+        width: 98%;
+    }
+    #total-confirmed {
+        width: 30%;
+    }
+    #total-death {
+        width: 30%;
+    }
+    #total-recovered {
+        width: 30%;
+    }
+    .total-data div p {
+        font-size: 24px;
+    }
+
+    .new-data {
+        width: 98%;
+    }
+    #new-confirmed {
+        width: 30%;
+    }
+    #new-death {
+        width: 30%;
+    }
+    #new-recovered {
+        width:30%;
+    }
+    .new-data div p{
+        font-size: 24px;
+    }
+  }

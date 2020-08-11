@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container tracker-container">
+        <div class="jumbotron jumbotron-fluid covid-jumbotron">
+            <div class="container">
+              <h1 class="covid-header">Covid-19 Daily Tracker</h1>
+              <p class="covid-description">A daily tracker of the Covid-19 virus, enter the country in the search bar to recieve the report. Report is given via "covid19api" API.
+                Website created by Chelsea S. Jackson.
+              </p>
+              <button type="button" class="btn btn-info" id="port-btn">Portfolio</button>
+            </div>
+          </div>
+          <div class="info-box">
+          <form>
+            <div class="form-row input-row">
+              <div class="col-12 form">
+                <label for="country-input">Enter country's name</label>
+                <input type="text" class="form-control" id="input-text" value="" required>
+                <button type="button" class="btn btn-success btn-block" id="submit-btn">Get Report</button>
+              </div>
+            </div>
+          </form>
+          <div class="api-data">
+          </div>
+        </div>
+        </div>
+        
+</body>
+<script src="tracker.js"></script>
+</html>
