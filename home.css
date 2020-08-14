@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'News Cycle', sans-serif;
+}
+.carousel-item {
+    height: 100vh;
+    background: #777;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 200px;
+}
+#photo1 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(./images/medical.jpg);
+}
+#photo2 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(./images/covid-19-cell.jpg);
+}
+#photo3 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(./images/blood-test1.jpg);
+}
+.covid-nav {
+background-color: transparent;
+}
