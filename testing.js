@@ -31,4 +31,4 @@ $(document).ready(function() {
     //     })
     // } 
 });
-/* https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCh_Qf_xs-4uCVn8-tJm4xc0nnMMsqAzVo */
+/* https://www.googleapis.com/geolocation/v1/geolocate?key= */
