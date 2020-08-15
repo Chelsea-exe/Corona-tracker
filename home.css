@@ -29,6 +29,49 @@ body {
 #photo3 {
     background-image:linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(./images/blood-test1.jpg);
 }
-.covid-nav {
-background-color: transparent;
+#home,
+#testing,
+#tracker {
+    font-size: 18px;
+}
+#foot-name {
+    color: white;
+}
+#covid-foot {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+#github-foot {
+    margin: 0 10px 0 10px;
+}
+nav {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    text-decoration: none;
+    display: inline-block;
+    /* margin: 30px; */
+    padding: 10px 20px;
+}
+#home{
+    background-color: rgb(104, 187, 184);
+    border-radius: 40px;
+    padding: 10px 25px;
+}
+/* #home:hover {
+    cursor: pointer;
+    border-bottom: 2px rgb(134, 114, 146) solid;
+} */
+#tracker:hover {
+    cursor: pointer;
+    border-bottom: 2px rgb(104, 187, 184) solid;
+}
+#test:hover {
+    cursor: pointer;
+    border-bottom: 2px rgb(104, 187, 184) solid;
 }

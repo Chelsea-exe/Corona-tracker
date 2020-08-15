@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="testing.css">
+    <title>Covid-19 Testing</title>
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <ul>
+            <li class="nav-pages" id="home">Home</li>
+            <li class="nav-pages" id="tracker">Covid Tracker</li>
+            <li class="nav-pages" id="test">Test Sites</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          </div>
+          <form>
+            <div class="form-row align-items-center">
+              <div class="col-6">
+                <label class="sr-only" for="inlineFormInput">Name</label>
+                <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Search Covid-19 testing">
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2" id="gps-btn">Locate</button>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-info" id="find-btn">Find near me</button>
+          </form>
+    </div>
+    <div id="map"></div>
+    <!-- <ul class="geo-data>" -->
+
+    <script src="testing.js"></script>
+</body>
+</html>
