@@ -1,9 +1,13 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
+}
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'News Cycle', sans-serif;
 }
 nav {
-    font-family: 'News Cycle', sans-serif;
     font-size: 18px;
     color: white;
 }
@@ -15,6 +19,20 @@ nav li {
     display: inline-block;
     /* margin: 30px; */
     padding: 10px 20px;
+}
+.covid-nav li a {
+    color: inherit; 
+    text-decoration-line: none;
+}
+#covid-foot {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+#github-foot {
+    margin: 0 10px 0 10px;
+}
+#foot-name {
+    color: white;
 }
 #test{
     background-color: rgb(104, 187, 184);
@@ -29,10 +47,19 @@ nav li {
     cursor: pointer;
     border-bottom: 2px rgb(104, 187, 184) solid;
 }
-/* #test:hover {
+#test:hover {
     cursor: pointer;
-    border-bottom: 2px rgb(134, 114, 146) solid;
-} */
-#gps-btn {
-    padding: 5px 30px;
+    /* border-bottom: 2px rgb(134, 114, 146) solid; */
+}
+.testing-jumbotron {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+h1 {
+    font-weight: 700;
+    font-size: 67px;
+}
+#map {
+    height: 500px;
+    margin-top: 10px;
 }

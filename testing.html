@@ -8,37 +8,45 @@
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="testing.css">
-    <title>Covid-19 Testing</title>
+    <title>Covid-19 Testing Map</title>
 </head>
 <body>
-    <nav class="navbar bg-dark">
-        <ul>
-            <li class="nav-pages" id="home">Home</li>
-            <li class="nav-pages" id="tracker">Covid Tracker</li>
-            <li class="nav-pages" id="test">Test Sites</li>
-        </ul>
+    <nav class="navbar navbar-dark bg-dark covid-nav">
+      <ul>
+        <li class="nav-pages" id="home"><a href="index.html">Home</a></li>
+        <li class="nav-pages" id="tracker"><a href="tracker.html">Tracker</a></li>
+        <li class="nav-pages" id="test"><a href="testing.html">Tesing</a></li>
+      </ul>
     </nav>
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <div class="container testing-container">
+        <div class="jumbotron jumbotron-fluid testing-jumbotron">
+          <div class="inner-container">
+            <h1>Find Covid-19 Testing Near You</h1>
+            <p>Using your current location you can search where Covid-19 testing is in your area.</p>
           </div>
-          <form>
-            <div class="form-row align-items-center">
-              <div class="col-6">
-                <label class="sr-only" for="inlineFormInput">Name</label>
-                <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Search Covid-19 testing">
-              </div>
-              <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-2" id="gps-btn">Locate</button>
-              </div>
+        </div>
+          <div class="row">
+            <div class="col">
+              <input class="form-control" id="search" type="text" placeholder="Covid-19 testing..."></input>
+              <!-- <button type="submit" class="btn btn-primary mb-2" id="gps-btn">Locate</button> -->
             </div>
-            <button type="submit" class="btn btn-info" id="find-btn">Find near me</button>
-          </form>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div id="map"></div>
+            </div>
+          </div>
     </div>
-    <div id="map"></div>
-    <!-- <ul class="geo-data>" -->
-
-    <script src="testing.js"></script>
+    <footer class="bg-dark sticky-bottom">
+      <div id="covid-foot">
+        <h4 id="foot-name">Website by Chelsea S. Jackson</h4>
+        <button type="button" class="btn btn-info" id="port-foot">Portfolio</button>
+        <button type="button" class="btn btn-info" id="github-foot">Github</button>
+        <button type="button" class="btn btn-info" id="email-foot">Email</button>
+      </div>
+    </footer>
+      <script src="testing.js"></script>
+      <script src="index.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh_Qf_xs-4uCVn8-tJm4xc0nnMMsqAzVo&callback=createMap&libraries=places" async defer></script>
 </body>
 </html>

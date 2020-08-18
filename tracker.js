@@ -1,8 +1,3 @@
-let portfolio = document.getElementById("port-btn");
-portfolio.addEventListener("click", () => {
-    console.log("portfolio button was pressed")
-    window.open("http://chelsea-exe.github.io/", '_blank');
-})
 let btn = document.getElementById("submit-btn");
 //set variable btn to the html button id
         
@@ -24,7 +19,7 @@ let btn = document.getElementById("submit-btn");
             .then((getData)=>{
                 console.log(getData);
                 console.log("api was contacted");
-                var content = document.querySelector(".api-data");
+                // var content = document.querySelector(".api-data");
                 /*then take the getData that's within the json, have the getData be printed in
                 the console and set a variable called content to api-data div that's within the
                 HTML.

@@ -5,25 +5,29 @@
 body {
     height: 100%;
     width: 100%;
-    /* background-image: url(./images/covid-19-cell.jpg); */
-}
-
-.covid-header {
     font-family: 'News Cycle', sans-serif;
+}
+.covid-header {
     font-weight: 700;
     font-size: 67px;
-}
-.covid-description {
-    font-family: 'News Cycle', sans-serif;
 }
 .covid-jumbotron {
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
-    background-color: white;
 }
 .api-data {
     width: 800px;
     margin: 10px auto;
+}
+#covid-foot {
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+#github-foot {
+    margin: 0 10px 0 10px;
+}
+#foot-name {
+    color: white;
 }
 .data-boxes .country-index {
     border: 2px solid black;
@@ -34,7 +38,6 @@ body {
 }
 .data-boxes .country-index span{
     font-size: 24px;
-    font-family: 'News Cycle', sans-serif;
     font-weight: 700;
 }
 .total-data{
@@ -57,7 +60,6 @@ body {
     height: 200px;
     font-size: 32px;
     text-align: center;
-    font-family: 'News Cycle', sans-serif;
     /* background-color: rgb(137, 137, 137); */
     color: white;
 }
@@ -76,7 +78,6 @@ body {
 .new-data div{
     width: 235px;
     height: 200px;
-    font-family: 'News Cycle', sans-serif;
     color: white;
     font-size: 32px;
     text-align: center;
@@ -95,7 +96,6 @@ body {
 }
 label {
     font-size: 24px;
-    font-family: 'News Cycle', sans-serif;
     font-weight: bold;
 }
 #submit-btn {
@@ -103,9 +103,9 @@ label {
     font-size: 18px;
 }
 nav {
-    font-family: 'News Cycle', sans-serif;
     font-size: 18px;
     color: white;
+    background-color: lightcoral;
 }
 nav ul {
     list-style: none;
@@ -115,6 +115,10 @@ nav li {
     display: inline-block;
     /* margin: 30px; */
     padding: 10px 20px;
+}
+.covid-nav li a {
+    color: inherit; 
+    text-decoration-line: none;
 }
 #tracker{
     background-color: rgb(104, 187, 184);
@@ -133,6 +137,9 @@ nav li {
 #test:hover {
     cursor: pointer;
     border-bottom: 2px rgb(104, 187, 184) solid;
+}
+footer {
+    margin-top: 142px;
 }
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -171,6 +178,6 @@ nav li {
         font-size: 24px;
     }
     nav {
-        width: 83%;
+        width: 100%;
     }
   }
