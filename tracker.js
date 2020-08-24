@@ -66,14 +66,14 @@ let btn = document.getElementById("submit-btn");
                                     <span>Covid-19 Cases in ${getData.Countries[countriesIndex].Country}</span>
                                 </div>
                                 <div class="total-data">
-                                    <div id="total-confirmed"><p id="tot-confirm-p">Total Confirmed</p> ${getData.Countries[countriesIndex].TotalConfirmed}</div>
-                                    <div id="total-death"><p id="tot-death-p">Total Deaths</p> ${getData.Countries[countriesIndex].TotalDeaths}</div>
-                                    <div id="total-recovered"><p id="tot-recov-p">Total Recovered</p> ${getData.Countries[countriesIndex].TotalRecovered}</div>
+                                    <div id="total-confirmed"><p class="data-p" id="tot-confirm-p">Total Confirmed</p> <span class="data-span">${getData.Countries[countriesIndex].TotalConfirmed}</span></div>
+                                    <div id="total-death"><p class="data-p" id="tot-death-p">Total Deaths</p> <span class="data-span" id="data-death-span">${getData.Countries[countriesIndex].TotalDeaths}</span></div>
+                                    <div id="total-recovered"><p class="data-p" id="tot-recov-p">Total Recovered</p> <span class="data-span">${getData.Countries[countriesIndex].TotalRecovered}</span></div>
                                 </div>
                                 <div class="new-data">
-                                    <div id="new-confirmed"><p>New Confirmed</p> ${getData.Countries[countriesIndex].NewConfirmed}</div>
-                                    <div id="new-death"><p>New Deaths</p> ${getData.Countries[countriesIndex].NewDeaths}</div>
-                                    <div id="new-recovered"><p>New Recovered</p> ${getData.Countries[countriesIndex].NewRecovered}</div>
+                                    <div id="new-confirmed"><p class="data-p" id="new-confirm-p">New Confirmed</p> <span class="data-span">${getData.Countries[countriesIndex].NewConfirmed}</span></div>
+                                    <div id="new-death"><p class="data-p" id="new-death-p">New Deaths</p> <span class="data-span" id="data-death-span">${getData.Countries[countriesIndex].NewDeaths}</span></div>
+                                    <div id="new-recovered"><p class="data-p" id="new-recov-p">New Recovered</p> <span class="data-span">${getData.Countries[countriesIndex].NewRecovered}</span></div>
                                     </div>
                                 </div>`;
                                 }

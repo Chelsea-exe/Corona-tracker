@@ -5,6 +5,9 @@
 body {
     font-family: 'News Cycle', sans-serif;
 }
+h1 {
+    font-weight: 700;
+}
 .carousel-item {
     height: 100vh;
     background: #777;
